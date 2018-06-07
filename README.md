@@ -27,6 +27,10 @@ Specs:
 5. The program joins the numbers into a string and displays.
   Example input: ("M","M","M","L","X","IV")
   Example output: "MMMLXIV"
+
+6. The program handles 900 and 90, DCD and LXL, with CM and XC.
+  Example input: "LXL"
+  Example output: "XC"
 _
 
 ## Setup/Installation Requirements
@@ -35,7 +39,7 @@ _
 
 ## Known Bugs
 
-_ _
+_No known bugs_
 
 ## Support and contact details
 
