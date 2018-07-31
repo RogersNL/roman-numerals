@@ -1,6 +1,9 @@
 // FUNCTION THAT CONVERTS TO ROMAN NUMERALS
-export function converter(numb) {
-  var calcNum = numb;
+export function Number(number){
+  this.number = number;
+}
+Number.prototype.converter = function() {
+  var calcNum = this.number;
   var arrM = [];
   var arrD = [];
   var arrC = [];
@@ -14,7 +17,7 @@ export function converter(numb) {
   var condition3 = [1000,1000,1000,500,100,100,100,100,50,10,10,10,10];
   var condition4 = [arrM,arrM,arrM,arrD,arrC,arrC,arrC,arrC,arrL,arrX,arrX,arrX,arrX];
 
-  if (numb < 4000) {
+  if (this.number < 4000) {
     for (var i = 0; i < condition1.length; i++) {
       if(calcNum / condition1[i] >= 1) {
       calcNum -= condition3[i];
@@ -40,4 +43,4 @@ export function converter(numb) {
   } else {
   return "Roman numerals only count to 3999";
   }
-}
+};

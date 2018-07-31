@@ -1,6 +1,10 @@
-describe('converter', function() {
+import { Number } from '../src/scripts';
 
-  it('should test whether a Triangle has three sides', function() {
-    //Test content will go here.
+describe('Number', function() {
+
+  it('to check roman numeral', function() {
+     var myNumber = new Number(10);
+     console.log(myNumber);
+    expect(myNumber.converter()).toEqual("X");
   });
 });
